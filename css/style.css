@@ -152,7 +152,7 @@ section{
 
 
 /* HALAMAN SERVICE */
-/* .service {
+.service {
 	background-color:#15728f;
 	width: 100%;
 }
@@ -165,7 +165,7 @@ section{
 	text-align:center;
 	padding:15px 0;
 	color:#fff;
-} */
+}
 .box {
 	color:#fff;
 	width: 1300px;
@@ -212,6 +212,8 @@ section{
 	color: white;
 	opacity: 0.3;
 	transition: 0.5s;
+	position: relative;
+	z-index: 1;
 }
 .link:hover{
 	opacity: 1;
@@ -401,8 +403,12 @@ footer{
 		box-sizing: border-box;
 	}
 	.artikel h1{
-		font-size: 30px;
+		font-size: 25px;
 		text-align: left;
+		line-height: 30px;
+	}
+	.artikel ol li h2{
+		line-height: 30px;
 	}
 	.artikel h3{
 		text-align: left;
