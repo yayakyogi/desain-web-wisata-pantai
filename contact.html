@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<header style="z-index: 2; width:100%;box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.1);">
+	<header style="z-index: 2; width:100%;box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.1); border-top: 5px solid #1687A8;">
 		<div class="container">
 			<nav>
 				<h1><a href="index.html" class="judul">KuliKode</a></h1>
@@ -47,10 +47,19 @@
 
 
 
-  <footer style="background-color: #1687A8;color: #fff;">
+  <footer style="background-color: #095066;color: #fff;">
 		<div class="container">
       <small style="letter-spacing: 3px;">Made by <span style="color: red; font-size: 12pt;">&hearts;</span> kulikode </small>
       </div>
-	</footer>
+  </footer>
+  
+
+  <script>
+    const btn = document.querySelector(".btn-submit");
+
+    btn.addEventListener("click",function(){
+      alert("Terimakasih atas tanggapan anda :)");
+    })
+  </script>
 </body>
 </html>
