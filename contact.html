@@ -31,13 +31,13 @@
         </div>
         <div class="form-body" style="text-align: left;">
           <label>Nama Lengkap</label><br>
-          <input type="text" name="nama" class="form-control" placeholder="Nama lengkap" required="required"><br>
+          <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama lengkap" required="required"><br>
 
           <label>Email</label><br>
-          <input type="text" name="nama" class="form-control" placeholder="Email anda" required="required"><br>
+          <input type="text" id="email" name="nama" class="form-control" placeholder="Email anda" required="required"><br>
 
           <label>Pesan</label><br>
-          <textarea name="alamat" cols="5" rows="5" class="form-control" placeholder="Pesan anda" required="required"></textarea>
+          <textarea name="alamat" id="pesan" cols="5" rows="5" class="form-control" placeholder="Pesan anda" required="required"></textarea>
 
           <input type="submit" class="btn-submit" value="Kirim">
         </div>
@@ -47,7 +47,7 @@
 
 
 
-  <footer style="background-color: #1687A8;color: #fff;">
+  <footer style="background-color: #1687A8;color: #fff; box-shadow: 0px -2px 2px rgba(0,0,0,0.2);">
 		<div class="container">
       <small style="letter-spacing: 3px;">Made by <span style="color: red; font-size: 12pt;">&hearts;</span> kulikode </small>
       </div>
@@ -55,11 +55,19 @@
   
 
   <script>
+    const nama = document.getElementById("nama").nodeValue;
+    const email = document.getElementById("email").nodeValue;
+    const pesan = document.getElementById("pesan").nodeValue;
     const btn = document.querySelector(".btn-submit");
 
     btn.addEventListener("click",function(){
-      alert("Terimakasih atas tanggapan anda :)");
-    })
+      if(nama!="" && email!="" && pesan!=""){
+        alert("Terimakasih atas tanggapan anda :)");
+      }
+      else{
+        alert("Form harus diisi semua");
+      }
+    });
   </script>
 </body>
 </html>
