@@ -368,7 +368,13 @@ footer{
 @media screen and (max-width:720px){
 	nav{
 		flex-direction: column;
-		padding: 10px 0;
+		padding: 20px 0;
+		width: auto;
+		box-sizing: border-box;
+		border-top: 5px solid #1687A8;
+	}
+	header h1{
+		display: none;
 	}
 	.container,
 	.about,
